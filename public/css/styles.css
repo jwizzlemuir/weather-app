@@ -1,0 +1,81 @@
+body {
+    color: #333333;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+    max-width: 100%;
+    margin: 0 auto;
+    /* padding: 0 16px; */
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+#message-one{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+#message-two{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 16px;
+}
+
+
+.main-content{
+    flex-grow: 1;
+    padding-left: 20px;
+}
+
+a {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex:0.1;
+    border: 2px solid wheat;
+    color: #846d44;
+    text-decoration: none;
+    margin-right: 15px;  
+    font-family: Arial, Helvetica, sans-serif; 
+}
+a:active {
+    color: indigo;  
+}
+footer {
+    background: lightgoldenrodyellow;
+    padding: 16 0px;
+    margin-top: 16px;
+    max-width: 100%;
+    border-top: 1px solid #eeeeee;
+}
+header {
+    flex-direction: row;
+    background: cornsilk;
+    align-content: center;
+    display: flex;
+    margin-bottom: 48px;
+    border-bottom: 1px solid #eeeeee;
+}
+h1{
+    align-self: flex-end;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size:64px;
+    width: 15%;
+}
+.portrait {
+    width:250px;
+}
+input{
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+button {
+    cursor: pointer;
+    border: 1px solid #888888;
+    background: #888888;
+    color: white;
+    padding: 8px;
+}
