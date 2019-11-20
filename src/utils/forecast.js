@@ -12,7 +12,11 @@ const forecast = (latitude, longitude, callback) => {
         } else if(body.error){
             callback('Unable to find this location', undefined)
           } else {
-              callback(undefined, body.daily.data[0].summary + ' it is currently ' + body.currently.temperature + ' degrees outside. There is currently a ' + body.currently.precipProbability + '% chance of rain.') 
+            const time = new Date(body.daily.data[0].time*1000)
+            const dateDisplay = time.toDateString()
+              callback(undefined, body.daily.data[0].summary + ' it is currently ' + body.currently.temperature + ' degrees outside. There is currently a ' + body.currently.precipProbability + '% chance of rain. ' + dateDisplay)
+              
+              
           }    
                 
     })
